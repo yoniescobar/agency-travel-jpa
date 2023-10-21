@@ -15,14 +15,13 @@ import java.util.Set;
 public class CustomerEntity implements Serializable {
 
     @Id
-    @Column(length = 12)
     private String dni;
     @Column(length = 50)
     private String fullName;
     @Column(length = 50)
     private String creditCard;
     @Column(length = 12)
-    private String phone;
+    private String phoneNumber;
     private Integer totalFlights; // total de vuelos
     private Integer totalLodgings; // total de alojamientos
     private Integer totalTours; // total de tours

@@ -18,16 +18,15 @@ public class FlyEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private Double originLat;
     private Double originLng;
     private Double destinyLat;
-    private BigDecimal price;
+    private Double destinyLng;
     @Column(length = 20)
     private String originName;
     @Column(length = 20)
     private String destinyName;
-
+    private BigDecimal price;
     @Enumerated(EnumType.STRING)
     private AeroLine aeroLine;
 
