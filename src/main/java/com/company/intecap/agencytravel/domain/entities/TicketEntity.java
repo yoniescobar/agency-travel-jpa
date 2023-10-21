@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity(name = "ticket")
@@ -21,9 +22,9 @@ public class TicketEntity implements Serializable {
     @Column(length = 200) //tamaño maximo de la columna
     private UUID id;
 
-    private LocalDate departureDate; //formato: 2021-09-01 fecha de salida
-    private LocalDate arrivalDate; // fecha de llegada
-    private LocalDate purchaseDate; // fecha de compra
+    private LocalDateTime departureDate; //formato: 2021-09-01 fecha de salida
+    private LocalDateTime arrivalDate; // fecha de llegada
+    private LocalDateTime purchaseDate; // fecha de compra
     private BigDecimal price;
 
     //ticket a fly(Muchos a uno)
